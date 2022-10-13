@@ -1,0 +1,121 @@
+main {
+  background-image: url("../images/bg.png");
+  background-repeat: repeat;
+  background-size: 1000px;
+}
+
+.logo {
+    width: 120px;
+}
+
+.contenedor_logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor_footer {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+
+.boton_buscar{
+    background-color: #ffc107;
+    border: 1px solid black;
+    border-radius: 5%;
+    color: white;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.borde_imagen_nosotros{
+    border:solid 2px black;
+    border-radius: 10%;
+}
+
+/* Sobre la fuente */
+
+.negrita{
+  font-weight: bold;
+}
+
+.negrita:hover{
+  font-weight: bold;
+}
+
+.blanco{
+  color: white;
+}
+
+.naranja{
+color: orange
+}
+
+/* Animaciones, transiciones y transformaciones */
+
+.animacion_logo {
+  animation-name: entra_logo;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+ animation-duration: 3s;
+  animation-delay: 0;
+}
+
+@keyframes entra_logo {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+.animacion_saltar
+{
+  animation-name: saltar;
+   animation-iteration-count: 1;
+   animation-timing-function: linear;
+  animation-duration: 3s;
+   animation-delay: 0;
+}
+
+@keyframes saltar{
+  from {
+    transform: translateY(0px);
+  }
+  to {
+   transform: translateY(10px);
+  }
+}
+
+.animacion_caer
+{
+  animation-name: caer;
+   animation-iteration-count: 1;
+   animation-timing-function: linear;
+  animation-duration: 2s;
+   animation-delay: 0;
+}
+
+@keyframes caer{
+  from {
+    transform: translateY(-12px);
+    opacity: 0;
+  }
+  to {
+   transform: translateY(0px);
+   opacity: 100;
+  }
+}
+
+.imagen_nosotros:hover{
+  transform: scale(1.05,1.05);
+}
+
+.imagen_catalogo:hover{
+  transform: scale(1.02,1.02);
+}
+
+.boton_buscar:hover{
+  text-decoration: underline;
+  font-size: 18px;
+}
