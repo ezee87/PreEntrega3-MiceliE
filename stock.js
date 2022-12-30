@@ -6,7 +6,7 @@ const productos =
         tipo: "3 piezas",
         descripcion: "Gran capacidad de guardado",
         precio: 2300,
-        img: 'images/producto1.png',
+        img: '../images/producto1.png',
         cantidad:1
     },
 
