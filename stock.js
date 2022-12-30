@@ -2,67 +2,51 @@ const productos =
 [
     {
         id: 1,
-        nombre: "Buzo 1",
-        tipo: "buzo",
-        desc: "Un buzo que re va con vos",
-        precio: 1200,
-        talle: "L",
-        img: '/images/producto1.png',
+         nombre: "Pikachu",
+        tipo: "3 piezas",
+        descripcion: "Gran capacidad de guardado",
+        precio: 2300,
+        img: 'images/producto1.png',
         cantidad:1
     },
 
     {
         id: 2,
-        nombre: "Remera 1",
-        tipo: "remera",
-        desc: "Una remera que re va con vos",
-        precio: 500,
-        talle: "L",
-        img: '/images/producto2.png',
+        nombre: "Herakles",
+        tipo: "Llavero de 3 piezas",
+        descripcion: "Llevalo a todos lados e impresiona",
+        precio: 1500,
+        img: 'images/producto2.png',
         cantidad:1
     },
 
     {
         id: 3,
-        nombre: "Camisa 1",
-        tipo: "camisa",
-        desc: "Una camisa que re va con vos",
-        precio: 900,
-        talle: "S",
-        img: '/images/producto3.png',
+        nombre: "Pokegrinder",
+        tipo: "4 piezas, con recolector",
+        descripcion: "Atrapa cada particula",
+        precio: 2600,
+        img: 'images/producto3.png',
         cantidad:1
     },
 
     {
         id: 4,
-        nombre: "Pantalon 1",
-        tipo: "pantalon",
-        desc: "Una pantalon que re va con vos",
-        precio: 1600,
-        talle: "L",
-        img: '/images/producto1.png',
+        nombre: "Oreo",
+        tipo: "Llavero de 2 piezas",
+        descripcion: "Atractivo, divertido, y muy util. Te va a salvar la vida mas de una vez.",
+        precio: 1200,
+        img: 'images/producto1.png',
         cantidad:1
     },
 
     {
         id: 5,
-        nombre: "Buzo 2",
-        tipo: "buzo",
-        desc: "Un buzo que re va con vos",
-        precio: 1200,
-        talle: "L",
-        img: '/images/producto2.png',
+        nombre: "420",
+        tipo: "4 piezas, con recolector y palas",
+        descripcion: "El diseño mas funcional del mercado",
+        precio: 1600,
+        img: 'images/producto2.png',
         cantidad:1
     },
-
-    {
-        id: 6,
-        nombre: "Remera 2",
-        tipo: "remera",
-        desc: "Una remera que re va con vos",
-        precio: 500,
-        talle: "L",
-        img: '/images/producto3.png',
-        cantidad:1
-    }
 ];
