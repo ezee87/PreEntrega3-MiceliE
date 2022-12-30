@@ -65,76 +65,9 @@
     </div>
   </header>
 
-  <main class="container-fluid my-3 py-3 border-top border-warning">
+  <main class = "container-fluid my-3 py-3 border-top border-warning">
+    
 
-    <!-- Carrousel -->
-
-    <div class="container">
-      <div class="row">
-        <div class="col py-3">
-          <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-                aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                aria-label="Slide 3"></button>
-            </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="images/banner.png" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="images/banner2.png" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="images/banner3.png" class="d-block w-100" alt="...">
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-              data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Anterior</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-              data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Siguiente</span>
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Servicios -->
-
-    <div class="container">
-      <div class="container my-3 py-2 border border-warning rounded bg-light">
-        <div class="row d-flex justify-content-center">
-
-          <div class="col text-center">
-            <i class="fa-solid fa-credit-card"></i>
-            <h6>PAGO SEGURO</h6>
-            <p> Paga con seguridad a través de Mercado Pago</p>
-          </div>
-
-          <div class="col text-center">
-            <i class="fa-solid fa-truck-fast"></i>
-            <h6>ENVIOS A TODO EL PAÍS</h6>
-            <p>Envio gratis en compras superiores a $6.000 </p>
-          </div>
-
-          <div class="col text-center">
-            <i class="fa-solid fa-leaf"></i>
-            <h6>ECO AMIGABLE</h6>
-            <p>Nuestros productos son biodegradables</p>
-          </div>
-
-
-        </div>
-      </div>
-    </div>
 
     <!-- Productos destacados -->
 
@@ -142,50 +75,63 @@
 
       <div class="row">
         <div class="col text-center">
-          <h2 class="naranja">Productos destacados</h2>
+          <h2 class="naranja">Tienda   <button id="cesta-carrito"><i class="fas fa-shopping-cart"></i><span id="contador-carrito">0</span></button></h2>
+        
         </div>
       </div>
     </div>
-
+    
     <div class="container d-flex justify-content-center">
       <div class="row d-flex justify-content-center text-center my-3">
-
-    <div class="col md-4 my-1">
-          <div class="card" style="width: 18rem;">
-            <img src="images/producto1.png" class="card-img-top img-fluid" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Oreo XXL</h5>
-              <p class="card-text">$199.99</p>
-              <a href="#" class="btn btn-warning container-fluid negrita">Comprar</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col md-4 my-1">
-          <div class="card" style="width: 18rem;">
-            <img src="images/producto2.png" class="card-img-top img-fluid" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Pokebola</h5>
-              <p class="card-text">$199.99</p>
-              <a href="#" class="btn btn-warning container-fluid negrita">Comprar</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col md-4 my-1">
-          <div class="card" style="width: 18rem;">
-            <img src="images/producto3.png" class="card-img-top img-fluid" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Herakles</h5>
-              <p class="card-text">$199.99</p>
-              <a href="#" class="btn btn-warning container-fluid negrita">Comprar</a>
-            </div>
-          </div>
-        </div>
-      </div>
+    <div id = "producto-contenedor">
     </div>
     </div>
+    </div>
+   
+
+
   </main>
+
+  <div class="modal-contenedor">
+
+    <div class="modal-carrito">
+      <h3>Carrito</h3>
+      <button id="btn-cerrar-carrito"><i class="fas fa-times-circle"></i></button>
+      <div id="carrito-contenedor">
+      </div>
+      <p class="precioProducto">Precio total: $<span id="precioTotal"></span></p>
+    <button id="confirmarcompra" class = "btn btn-warning negrita"><a>Confirmar compra</a></button>
+    </div>
+    
+  </div>
+
+  <div class = "confirmarcompra-contenedor">
+    <div class="modal-usuario">
+      <h3>Tus datos</h3>
+      <button id="btn-cerrar-usuario"><i class="fas fa-times-circle"></i></button>
+
+      <form id="form">
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Nombre</label>
+        <input type="text" class="form-control" id="exampleFormControlInput1" name = "nombre" placeholder="name@example.com">
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Apellido</label>
+        <input type="text" class="form-control" id="exampleFormControlInput1" name = "apellido" placeholder="name@example.com">
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Direccion</label>
+        <input type="number" class="form-control" id="exampleFormControlInput1" name = "direccion" placeholder="name@example.com">
+      </div>
+
+      <input type="submit" value="Enviar" id="enviarFormulario" class = "btn btn-warning negrita">
+
+      </form>
+     
+    </div>
+</div>
+
+  </div>
 
   <!-- Pie de página (footer) -->
 
@@ -252,6 +198,13 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
     crossorigin="anonymous"></script>
+
+    <script src="stock.js"></script>
+    <script src="modal.js"></script>
+    <script src="cart.js"></script>
+    <script src="app.js"></script>
+    <script src="index.js"></script>
+
 </body>
 
 </html>
